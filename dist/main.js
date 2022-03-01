@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(){const t=document.createElement("div");t.textContent="Restaurant",document.body.appendChild(t)}()})();
