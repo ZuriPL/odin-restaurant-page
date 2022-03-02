@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3.5rem;
+    background-color: var(--bg-800);
+    color: white;
+}
+
+.footer-link {
+    text-underline-offset: 2px;
+    cursor: pointer !important;
+    text-decoration: underline;
+}
+
+.footer-text {
+    color: var(--accent-color);
+    cursor: default;
+}
+
+.footer-link:hover {
+    color: hsl(30, 100%, 40%);
+}
+
+.footer-text:not(:last-child)::after {
+    content: '\2022';
+    padding-inline: 0.5rem;
+    text-decoration: none;
+}

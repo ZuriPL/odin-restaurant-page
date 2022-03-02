@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'HeaderFont';
+    src: url('../fonts/VeganStylePersonalUse-5Y58.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.header,
+.header span {
+    font-size: 3.25rem;
+    font-family: 'HeaderFont';
+    letter-spacing: 2px;
+    text-align: center;
+}
+
