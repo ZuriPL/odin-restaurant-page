@@ -6,9 +6,9 @@ export default function() {
     nav.innerHTML = `
         <h1><span style="color: var(--accent-color)">R</span>estaurant</h1>
         <div class="buttons-wrapper">
-            <a href="#" class="active" loc="home">Home</a>
-            <a href="#" class="" loc="menu">Menu</a>
-            <a href="#" class="" loc="about">About</a>
+            <a href="#" loc="home">Home</a>
+            <a href="#"loc="menu">Menu</a>
+            <a href="#" loc="about">About</a>
         </div>
     `
 

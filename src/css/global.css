@@ -18,7 +18,7 @@ body {
 
 .main {
     margin: 2rem 3rem;
-    padding: 1rem;
+    padding: 2rem;
     border: 2px solid var(--accent-color);
 }
 

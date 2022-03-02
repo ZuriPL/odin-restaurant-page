@@ -1,0 +1,10 @@
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 0.75rem;
+}
+
+.menu-item p {
+    text-align: start;
+    width: 4ch;
+}

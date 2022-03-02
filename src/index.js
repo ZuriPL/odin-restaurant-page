@@ -12,7 +12,6 @@ const links = [...document.querySelectorAll('a')]
 
 const content = document.createElement('div')
 content.classList.add('main')
-content.appendChild(home())
 document.body.appendChild(content)
 
 function changeTab(e) {
@@ -21,8 +20,7 @@ function changeTab(e) {
     })
     e.target.classList.add('active')
 
-    content.children[0].remove()
-    let toAdd = `${e.target.loc}()`
+    if (content.hasChildNodes()) content.children[0].remove()
     let fn
     switch (e.target.getAttribute('loc')) {
         case 'home':
@@ -42,5 +40,8 @@ function changeTab(e) {
 links.forEach(link => {
     link.addEventListener('click', changeTab)
 })
+
+changeTab({ target: document.querySelector('a[loc="home"]') })
+
 
 document.body.appendChild(footerF())
