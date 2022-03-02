@@ -1,3 +1,3 @@
 # odin-restaurant-page
 
-[Live]()
+[Live](https://zuripl.github.io/odin-restaurant-page/)
