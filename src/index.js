@@ -33,7 +33,6 @@ function changeTab(e) {
             fn = about
             break
     }
-    console.log(e.target.getAttribute('loc'))
     content.appendChild(fn())
 }
 
@@ -42,6 +41,8 @@ links.forEach(link => {
 })
 
 changeTab({ target: document.querySelector('a[loc="home"]') })
+
+document.querySelector('#home-link-to-menu').addEventListener('click', changeTab)
 
 
 document.body.appendChild(footerF())

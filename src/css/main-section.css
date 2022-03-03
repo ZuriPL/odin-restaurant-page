@@ -11,6 +11,9 @@
     font-family: 'HeaderFont';
     letter-spacing: 2px;
     text-align: center;
+}
+
+.menu .header {
     margin-bottom: 2rem;
 }
 
