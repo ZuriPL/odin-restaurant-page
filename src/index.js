@@ -18,7 +18,7 @@ function changeTab(e) {
     links.forEach(link => {
         link.classList.remove('active')
     })
-    e.target.classList.add('active')
+    document.querySelector(`a[loc="${e.target.getAttribute('loc')}"]`).classList.add('active')
 
     if (content.hasChildNodes()) content.children[0].remove()
     let fn
@@ -34,6 +34,7 @@ function changeTab(e) {
             break
     }
     content.appendChild(fn())
+    document.querySelector('#home-link-to-menu')?.addEventListener('click', changeTab)
 }
 
 links.forEach(link => {
@@ -42,7 +43,6 @@ links.forEach(link => {
 
 changeTab({ target: document.querySelector('a[loc="home"]') })
 
-document.querySelector('#home-link-to-menu').addEventListener('click', changeTab)
 
 
 document.body.appendChild(footerF())
