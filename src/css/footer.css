@@ -19,7 +19,7 @@
 }
 
 .footer-link:hover {
-    color: hsl(30, 100%, 40%);
+    color: hsl(43, 74%, 40%);
 }
 
 .footer-text:not(:last-child)::after {

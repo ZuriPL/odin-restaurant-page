@@ -4,7 +4,7 @@
 }
 
 :root {
-    --accent-color: #ff8000;
+    --accent-color: hsl(43, 74%, 49%);
     --bg-800: #232323;
 }
 
@@ -25,7 +25,8 @@ body {
 
 
 ::-webkit-scrollbar {
-    width: 0.5em;
+    width: 0.5rem;
+    height: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -38,7 +39,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: hsl(30, 100%, 40%);
+    background-color: hsl(43, 74%, 40%);
 }
 
 a {
